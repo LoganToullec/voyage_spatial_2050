@@ -14,7 +14,10 @@ pipeline {
                     def desc = "${params.DESC}"
                     def branch = "${params.BRANCH}"
                     def password = "${params.SONAR_SERVER_PWD}"
-                    
+                    echo name
+                    echo desc
+                    echo branch
+                    echo password
                 }
             }
         }
