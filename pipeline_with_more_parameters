@@ -3,8 +3,8 @@ pipeline {
     parameters {
         string(name: 'NAME', description: 'Please tell me your name')
         text(name: 'DESC', description: 'Describe about the job details')
-        choice(name: ‘BRANCH’, choices: [‘Master’, ‘Dev’], description: 'Choose the branch')
-        password(name: ‘SONAR_SERVER_PWD’, description: 'Enter SONAR password')
+        choice(name: 'BRANCH', choices: [‘Master’, ‘Dev’], description: 'Choose the branch')
+        password(name: 'SONAR_SERVER_PWD', description: 'Enter SONAR password')
     }
     stages {
         stage('Printing name') {
